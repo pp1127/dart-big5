@@ -1,4 +1,4 @@
-part of big5;
+part of dart_big5;
 
 // this decode table is copy from https://gist.github.com/shiedman/5477198
 // decode table   line 13

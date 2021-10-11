@@ -1,4 +1,4 @@
-library big5;
+library dart_big5;
 
 part 'table.dart';
 

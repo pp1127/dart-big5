@@ -14,3 +14,7 @@
 
 * upgrade minimum dart sdk to 2.1.0
 * improve decode performance in long word
+  
+## [0.0.5] - 2021/10/11
+
+* null safety
