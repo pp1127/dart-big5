@@ -66,8 +66,8 @@ String Big5TransformDecode(List<int> src) {
 List<int> Big5TransformEncode(String src) {
   var runes = Runes(src).toList();
 
-  var r = 0;
-  var size = 0;
+  int? r = 0;
+  int size = 0;
   List<int> dst = [];
 
   void write2(int r) {
@@ -92,49 +92,49 @@ List<int> Big5TransformEncode(String src) {
     if (r >= RUNE_SELF) {
       if (encode0Low <= r && r < encode0High) {
         r = encode0[r - encode0Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode1Low <= r && r < encode1High) {
         r = encode1[r - encode1Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode2Low <= r && r < encode2High) {
         r = encode2[r - encode2Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode3Low <= r && r < encode3High) {
         r = encode3[r - encode3Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode4Low <= r && r < encode4High) {
         r = encode4[r - encode4Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode5Low <= r && r < encode5High) {
         r = encode5[r - encode5Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode6Low <= r && r < encode6High) {
         r = encode6[r - encode6Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
       } else if (encode7Low <= r && r < encode7High) {
         r = encode7[r - encode7Low];
-        if (r != 0) {
+        if (r != null && r != 0) {
           write2(r);
           continue;
         }
